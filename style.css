@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&family=Poppins:ital,wght@1,100&display=swap');
+
+body {
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background: conic-gradient(at 125% 50%, #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7);
+}
+
+.container {
+
+    width: 95%;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.digitalclock {
+    border: 1px solid;
+    width: fit-content;
+    margin: auto;
+    padding: 10px;
+    border-radius: 2px;
+    color: white;
+    background-color: rgba(255, 192, 203, 0.377);
+}
+
+
+.digitalclock h1 {
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: bold;
+    font-size: 4rem;
+}
+
+
+@media(max-width:768px) {
+
+    #bar1,
+    #bar2 {
+        display: none;
+    }
+
+    .digitalclock {
+        text-align: center;
+        width: 100%;
+    }
+
+    .digitalclock h1 {
+        display: block;
+    }
+}
+
+@media(max-width:480px) {
+    .digitalclock {
+        font-size: 2rem;
+        padding: 5px;
+    }
+}
